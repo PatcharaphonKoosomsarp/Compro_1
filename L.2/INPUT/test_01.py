@@ -1,6 +1,6 @@
-hours_work = input("Enter Hours worked: ")
-pay_rate = input("Enter hourly pay rate: ")
+hours_work = int(input("Enter Hours worked: "))
+pay_rate = int(input("Enter hourly pay rate: "))
 
-calculate = float(hours_work) * float(pay_rate)
+calculate = hours_work * pay_rate
 
-print("Gross Pay: ", calculate)
+print("Gross Pay: ", format(calculate, ',.2f'))
