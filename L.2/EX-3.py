@@ -1,4 +1,4 @@
-ScoreTest = int(input("Enter Score Test : "))
+ScoreTest = int(input("Enter your test score : "))
 if ScoreTest >= 90:
     print("You grade is A")
 elif ScoreTest >= 80:
