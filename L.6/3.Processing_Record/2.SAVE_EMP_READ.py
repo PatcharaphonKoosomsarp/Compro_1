@@ -1,15 +1,18 @@
 def main():
-    emp_file = open('employee.txt', 'r')
-    for line in emp_file:
-        amount = line
-        name = line
-        id_num = line
-        dept = line
+    emp_file = open('employees.txt', 'r')
 
-        emp_file.read(name + '\n')
-        emp_file.read(id_num + '\n')
-        emp_file.read(dept + '\n')
+    line = emp_file.readline()
 
-        print(name, id_num, dept, (amount))
+    while line != '':
+        name = line.rstrip('\n')
+        id_num = emp_file.readline().rstrip('\n')
+        dept = emp_file.readline().rstrip('\n')
+
+        print('Name:', name)
+        print('ID:', id_num)
+        print('Dept:', dept)
+
+        line = emp_file.readline()
+
     emp_file.close()
 main()
