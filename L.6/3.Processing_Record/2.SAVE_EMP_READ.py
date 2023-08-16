@@ -1,5 +1,5 @@
 def main():
-    emp_file = open('employees.txt', 'r')
+    emp_file = open('employee.txt', 'r')
 
     line = emp_file.readline()
 
@@ -9,7 +9,7 @@ def main():
         dept = emp_file.readline().rstrip('\n')
 
         print('Name:', name)
-        print('ID:', id_num)
+        print('ID:', id_num)    
         print('Dept:', dept)
 
         line = emp_file.readline()

@@ -1,6 +1,6 @@
 def main():
     num_emps = int(input('How many employee records do you want to create? '))
-    emp_file = open('employees.txt', 'w')
+    emp_file = open('employee.txt', 'w')
 
     for count in range(1, num_emps + 1):
 
