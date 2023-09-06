@@ -1,14 +1,5 @@
 def find_peak_indices(nums):
-    peak_indices = []
-
-    for i in range(len(nums)):
-        if i == 0 and nums[i] > nums[i + 1]:
-            peak_indices.append(i)
-        elif i == len(nums) - 1 and nums[i] > nums[i - 1]:
-            peak_indices.append(i)
-        elif nums[i] > nums[i - 1] and nums[i] > nums[i + 1]:
-            peak_indices.append(i)
-
+    peak_indices = [i for i in range(1, len(nums) - 1) if nums[i] > nums[i - 1] and nums[i] > nums[i + 1]]
     return peak_indices
 
 nums1 = [3, 2, 3, 1]
