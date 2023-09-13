@@ -27,7 +27,7 @@ def main():
             sort_heroes.reverse()
             print(sort_heroes)
         elif choice == 6:
-            print('Exiting program.')
+            print('Exiting program...!')
     
 def display_menu():
     print('\n','--------MENU--------')
