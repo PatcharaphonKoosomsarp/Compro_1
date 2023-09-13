@@ -16,15 +16,6 @@ def main():
 
         input_file.close()
 
-
-
-
-
-
-
-
-
-
         def display_data(person):
             print('Name : ', person['name'])
             print('Age :', person['age'])
