@@ -1,4 +1,4 @@
-heroes = ['Ironman', 'Thor', 'Hulk', 'Superman','Spiderman']
+heroes = []
 sort_heroes = []
 
 def main():
