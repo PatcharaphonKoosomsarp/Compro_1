@@ -13,15 +13,6 @@ def main():
 
     output_file.close()
 
-
-
-
-
-
-
-
-
-
 def save_data(file):
     person = {}
 
