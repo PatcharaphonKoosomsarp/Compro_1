@@ -1,6 +1,5 @@
-heroes = ['Ironman', 'Thor', 'Hulk', 'Superman','Spiderman']
-sort_heroes = []
-
+import pickle
+#เปิดไฟล์ เเละ ปิดไฟลฺ์เมื่อกด 6 ในโปรแกรม#
 def main():
     choice = 0
     while choice != 6:
@@ -18,29 +17,36 @@ def main():
             display_sorted_heroes()
         elif choice == 6:
             exit_program()
-            
+
 def display_heroes():
-    print(heroes)
+#สามารถดูได้ว่ามี HERO อะไรบ้าง ใน ไฟล์ heroes.dat#
+
+
+
 def add_hero():
-    add_hero = input('Add Enter Hero : ')
-    heroes.append(add_hero)
-    print(heroes)
+#เพิ่ม heroes ในไฟล์ heroes.dat#
+
+
+
 def insert_hero():
-    insert_hero = input('Insert Enter Hero : ')
-    heroes.insert(0, insert_hero)
-    print(heroes)
+#สามารถเพิ่ม heroes ได้ตำแหน่งที่ต้องการ#
+
+
+
 def remove_hero():
-    remove_hero = input('Remove Enter Hero : ')
-    heroes.remove(remove_hero)
-    print(heroes)
+#ลบ heroes ในไฟล์ heroes.dat#
+
+
+
 def display_sorted_heroes():
-    sort_heroes = heroes
-    sort_heroes.sort()
-    print(sort_heroes)
-    sort_heroes.reverse()
-    print(sort_heroes)
+#แสดง heroes ที่เรียงลำดับจากน้อยไปมาก หรือมากไปน้อย#
+
+
+
 def exit_program():
-    print('Exiting program...!')
+#ออกจากโปรแกรม เเละปิดไฟล์#
+
+
 
 def display_menu():
     print('\n','--------MENU--------')
