@@ -5,6 +5,6 @@ class employee(object):
         self.salary = 1234
 
 object1 = employee()
-print(object1.name)s
+print(object1.name)
 print(object1.age)
 print(object1.salary)
